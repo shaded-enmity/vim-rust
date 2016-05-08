@@ -11,7 +11,6 @@ USER root
 RUN dnf remove -y vim-minimal && dnf install -y vim make
 
 USER fedora
-RUN env
 RUN multirust default stable\
  && cd /home/fedora/.multirust/ && make toolchains/stable/src\
  && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim\
