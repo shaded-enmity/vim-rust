@@ -15,4 +15,5 @@ RUN multirust default stable\
  && cd /home/fedora/.multirust/ && make toolchains/stable/src\
  && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim\
  && vim +PluginInstall! +qall!\
+ && cargo install rustfmt\
  && cargo install racer

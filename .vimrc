@@ -20,11 +20,12 @@ filetype plugin indent on    " required
 set hidden
 let g:racer_cmd="/home/fedora/.multirust/toolchains/stable/cargo/bin/racer"
 let g:racer_experimental_completer = 1
+let g:tagbar_compact = 1
+let g:rustfmt_autosave = 1
 set completeopt+=noselect
 
 set number
 set relativenumber
-let g:tagbar_compact = 1
 set laststatus=2
 set mouse=a
 set shiftwidth=2
